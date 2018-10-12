@@ -8,7 +8,7 @@ Update dulu isi dari composernya:
 composer update
 ```
 
-Buat database `pengeluaran`.
+Buat database `murajaah`.
 
 Import database dari `database.sql`.
 
