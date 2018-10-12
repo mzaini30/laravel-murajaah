@@ -27,7 +27,7 @@ CREATE TABLE `murajaah` (
   `tanggal` datetime NOT NULL,
   `jumlah_halaman` int(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,6 @@ CREATE TABLE `murajaah` (
 
 LOCK TABLES `murajaah` WRITE;
 /*!40000 ALTER TABLE `murajaah` DISABLE KEYS */;
-INSERT INTO `murajaah` VALUES (7,'2018-10-09 00:00:00',123),(8,'2018-10-18 00:00:00',13),(9,'2018-10-21 00:00:00',20),(10,'2018-10-31 00:00:00',213),(11,'2018-10-10 00:00:00',333),(12,'2018-10-30 00:00:00',122);
 /*!40000 ALTER TABLE `murajaah` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-12 13:12:38
+-- Dump completed on 2018-10-12 14:45:29
