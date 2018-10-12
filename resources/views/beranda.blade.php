@@ -37,7 +37,7 @@
 				</p>
 				{{ $data->links() }}	
 				<hr>
-				<p>&copy; Zen & Laravel {{ date('Y') }}</p>
+				<p>&copy; <a href='http://muhammadzaini.com'>Zen</a> & Laravel {{ date('Y') }}</p>
 			</center>
 		</div>
 	</div>
