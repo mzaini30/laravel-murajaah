@@ -74,7 +74,7 @@
 
 		    yAxis: {
 		        title: {
-		            text: 'Nominal'
+		            text: 'Jumlah Halaman'
 		        }
 		    },
 
@@ -94,7 +94,7 @@
 		    },
 
 		    series: [{
-		        name: 'Jumlah Halaman',
+		        name: 'Murajaah',
 		        // data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
 		        data: [
 			        @foreach($data->sortBy('tanggal') as $d)
