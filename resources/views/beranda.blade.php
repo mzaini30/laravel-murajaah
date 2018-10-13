@@ -9,31 +9,35 @@
 @section('konten')
 
 	<div class="row">
-		<div class="theia col-sm-8">
+		<div class="theia col-sm-6">
 			<br>
 			<div id="container"></div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-6">
 			<br>
 			<table class="table table-hover">
 				<thead>
 					<tr>
 						<th>Tanggal</th>
 						<th>Banyaknya</th>
+						<th></th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 					@foreach($data as $d)
 						<tr>
-							<td>{{ Carbon\Carbon::parse($d->tanggal)->format('d/M/Y') }}</td>
+							<td>{{ $d->tanggal->format('d/M/Y') }}</td>
 							<td>{{ $d->jumlah_halaman }} halaman</td>
+							<td><a href='/{{ $d->id }}/edit' class="btn btn-info btn-sm">edit</a></td>
+							<td><a href='/{{ $d->id }}/hapus' class="btn btn-danger btn-sm">hapus</a></td>
 						</tr>
 					@endforeach
 				</tbody>
 			</table>
 			<center>
 				<p>
-					<a href="http://localhost/phpmyadmin/sql.php?db=murajaah&goto=db_structure.php&table=murajaah&pos=0" target="_blank" class="btn btn-default">Buka Database</a>
+					<a href="/baru" class="btn btn-default btn-sm">tambah</a>
 				</p>
 				{{ $data->links() }}	
 				<hr>
